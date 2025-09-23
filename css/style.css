@@ -1,8 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 #logo {
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: 22px;
-    padding: 0px;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 400;
     font-style: normal;
@@ -19,6 +17,10 @@
     animation: typing 2s steps(15)forwards, blink 1s step-end infinite;
 }
 
+a {
+    text-decoration: none;
+}
+
 @keyframes typing {
     from{
         width: 0;
@@ -33,3 +35,53 @@
         border-color: transparent;
     }
 }
+
+.nav-item {
+    border: none;
+    /* background-color: white; */
+    font-family: "Orbitron", sans-serif;
+    font-size: large;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav-link:link {
+    color: black;
+}
+.nav-link:visited {
+    color: black;
+  }
+  
+.nav-link:hover {
+    color: tomato;
+  }
+
+.nav-link.pink:hover {
+    color: #ff4365;
+}
+  
+.nav-link:active {
+    color: greenyellow;
+  }
+
+.classic {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: black;
+    background-color: #d4d0c8;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    box-shadow: inset 2px 2px 0 #808080, inset -2px -2px 0 #000000; 
+    text-shadow: 1px 1px 0 #ffffff;
+    cursor: pointer;
+    user-select: none;
+    image-rendering: pixelated;
+  }
+
+.classic:hover {
+    background-color: greenyellow;
+  }
