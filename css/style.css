@@ -90,3 +90,31 @@ a {
 .gray {
     background-color: rgba(128, 128, 128, 0.359);
 }
+
+.outlined-text {
+    font-family: "Orbitron", sans-serif;
+    color:  #ff4365;
+/*       text-shadow: 
+    -2px -2px 0 greenyellow,
+     2px -2px 0 greenyellow,
+    -2px  2px 0 greenyellow,
+     2px  2px 0 greenyellow,
+    -2px  0   0 greenyellow,
+     2px  0   0 greenyellow,
+     0   -2px 0 greenyellow,
+     0    2px 0 greenyellow; */
+}
+ 
+.brd {
+    border-right: 3px solid rgb(96, 95, 95);
+    padding-right: 90px;
+}
+
+.main {
+
+    background-color: rgb(41, 40, 40);
+    font-family: 'Fira Code', monospace;
+    color: #00FF00;
+    padding: 20px;
+    
+}
