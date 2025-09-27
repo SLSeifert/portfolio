@@ -71,16 +71,43 @@
     </nav>
     <section class="container-fluid rounded-1 gray">
       <div class="row">
+        <!-- Image column (always visible) -->
         <div class="col-12 col-md-4 p-0">
           <img class="img-fluid pe-5" src="images/photo-output.png" alt="" />
         </div>
+
+        <!-- Small screen code (only visible < md) -->
         <div
-          class="col-12 col-md-8 d-flex justify-content-center align-items-center"
+          class="col-12 col-md-8 d-flex d-md-none justify-content-center align-items-center border border-secondary"
         >
-          <div class="col display-6 p-lg-5">
-            <div class="row">
+          <pre
+            style="
+              font-family: 'Fira Code', monospace;
+              font-size: 1.25rem;
+              margin: 0;
+            "
+          >
+
+&lt;<span style="color: #ff4365">div</span> <span style="color: rgb(130, 204, 19)">class</span>=<span style="color: yellow">"intro"</span>&gt;
+
+    &lt;h2&gt;<span style="font-size: 1rem; font-weight: bold;"> Hello, I'm </span>&lt;/h2&gt;
+
+    &lt;h1&gt;<span class="outlined-text" style="font-size: 2rem; font-weight: bold;"> Stephen </span>&lt;/h1&gt;
+
+    &lt;h2&gt;<span style="font-size: 1rem;"> Web Developer </span>&lt;/h2&gt;
+
+&lt;/<span style="color: #ff4365">div</span>&gt;
+      </pre>
+        </div>
+
+        <!-- Medium+ screen code (visible ≥ md) -->
+        <div
+          class="col-12 col-md-8 d-none d-md-flex justify-content-center align-items-center"
+        >
+          <div class="display-6 media">
+            <div class="row flex-nowrap">
               <div class="col-1">22</div>
-              <div class="col-10 ps-4">
+              <div class="col ps-5">
                 &lt;<span style="color: #ff4365">div</span>
                 <span style="color: rgb(130, 204, 19)">class</span>=<span
                   style="color: yellow"
@@ -88,36 +115,34 @@
                 >&gt;
               </div>
             </div>
-            <div class="row">
-              <div class="brd col-1 pt-2">&nbsp;</div>
+            <div class="row flex-nowrap">
+              <div class="brd col-1 pt-1">&nbsp;</div>
             </div>
-            <div class="row">
+            <div class="row flex-nowrap">
               <div class="brd col-1 pt-2">23</div>
               <div class="col-1"></div>
-              <div class="col-2 pt-2">&lt;h2&gt;</div>
-              <div class="col-3 display-4 px-0 m-0">Hello, I'm</div>
-              <div class="col ps-3 pt-2 m-0">&lt;h2&gt;</div>
+              <div class="col px-0 m-0">&lt;h2&gt; Hello, I'm &lt;/h2&gt;</div>
             </div>
             <div class="brd col-1 pt-2">&nbsp;</div>
-            <div class="row">
+            <div class="row flex-nowrap">
               <div class="brd col-1">24</div>
               <div class="col-1"></div>
-              <div class="col-2">&lt;h1&gt;</div>
-              <div class="col-5 display-1 ps-0 m-0 outlined-text">Stephen</div>
-              <div class="col">&lt;h1&gt;</div>
+              <div class="col ps-0 m-0">
+                &lt;h1&gt;<span class="name"> Stephen</span> &lt;h1&gt;
+              </div>
             </div>
             <div class="brd col-1 pt-2">&nbsp;</div>
-            <div class="row">
+            <div class="row flex-nowrap">
               <div class="brd col-1 pt-0">23</div>
               <div class="col-1"></div>
-              <div class="col-2 pt-0">&lt;h2&gt;</div>
-              <div class="col-5 display-5 px-0">Web Developer</div>
-              <div class="col ps-3 pt-2 m-0">&lt;h2&gt;</div>
+              <div class="col m-0 p-0">
+                &lt;h2&gt; Web Developer &lt;/h2&gt;
+              </div>
             </div>
             <div class="brd col-1 pt-2">&nbsp;</div>
-            <div class="row">
+            <div class="row flex-nowrap">
               <div class="col-1">22</div>
-              <div class="col-10 ps-4">
+              <div class="col ps-5">
                 &lt;/<span style="color: #ff4365">div</span>&gt;
               </div>
             </div>
@@ -125,6 +150,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="main">
         <span style="font-size: large">bash-3.2$ </span> Lorem ipsum dolor sit
