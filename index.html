@@ -65,10 +65,77 @@
               <a class="nav-link pink" href="">Education</a>
             </li>
           </ul>
-          <button class="nav-link classic ms-lg-3" href="">contact</button>
+          <button
+            class="nav-link classic ms-lg-3"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            href=""
+          >
+            contact
+          </button>
         </div>
       </div>
     </nav>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">HIRE ME!</h5>
+            <button
+              type="button"
+              class="custom-close position-absolute top-0 end-0 mt-2 me-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" />
+              <div class="row">
+                <label for="areaCode" class="form-label mt-3"
+                  >Phone Number</label
+                >
+                <div class="col-4">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="areaCode"
+                    name="areaCode"
+                    placeholder="Area code"
+                  />
+                </div>
+                <div class="col ps-0">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="telNum"
+                    placeholder="Tel. number"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="classic" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button
+              type="button"
+              style="color: tomato; background-color: greenyellow"
+              class="classic"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="container-fluid rounded-1 gray">
       <div class="row">
         <!-- Image column (always visible) -->
@@ -190,7 +257,9 @@
     </section>
     <footer class="container pt-3 rounded-1">
       <div class="row text-center">
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center d-none d-md-flex"
+        >
           <i class="fa-solid fa-phone fa-lg text-dark"></i> Tel: (619) 742-3899
         </div>
         <div class="col-12 col-md-4">
@@ -210,17 +279,16 @@
             ><i class="fa-brands fa-google fa-3x text-dark"></i
           ></a>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center"">
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center d-none d-md-flex"
+        >
           <i class="fa-solid fa-envelope fa-lg text-dark"> </i>Email:
           slseifert1986@gmail.com
         </div>
         <div class="row pt-2 pb-0 m-0">
-            <p class="">
-            Copyright © Motus Technology 2025
-            </p>
+          <p class="">Copyright © Motus Technology 2025</p>
         </div>
       </div>
-
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

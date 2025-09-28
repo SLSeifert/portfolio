@@ -37,7 +37,7 @@ a {
     }
 }
 
-.nav-item {
+.nav-item, .modal-title {
     border: none;
     /* background-color: white; */
     font-family: "Orbitron", sans-serif;
@@ -48,6 +48,15 @@ a {
     text-decoration: none;
     color: black;
     
+}
+
+.modal-title {
+    font-size: xx-large;
+}
+
+.form-control:focus {
+  border-color: skyblue;         /* your custom border color */
+  box-shadow: 0 0 0 0.25rem rgba(255, 67, 101, 0.25); /* matching glow */
 }
 
 .nav-link {
@@ -64,6 +73,7 @@ a {
 .nav-link.pink:hover {
     color: #ff4365;
 }
+
   
 .nav-link:active {
     color: greenyellow;
@@ -83,7 +93,27 @@ a {
     image-rendering: pixelated;
   }
 
-.classic:hover {
+.modal-footer>.classic {
+    padding: 8px;
+}
+
+.modal-content {
+    border-color: #00FF00;
+    border-width: 5px;
+}
+
+.custom-close {
+  font-size: 2rem;
+  color: #ff4365; 
+  background: none;
+  border: none;
+}
+
+.custom-close:hover {
+  color: #ff6f91; 
+}
+
+.nav-link.classic:hover {
     background-color: greenyellow;
   }
 
