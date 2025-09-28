@@ -50,7 +50,7 @@ a {
     
 }
 
-.nav-link:link {
+.nav-link {
     color: black;
 }
 .nav-link:visited {
@@ -130,13 +130,13 @@ a {
       }
     }
 
-        @media (max-width: 768px) {
-       .media
-        {
-        font-size: 1.8rem;
-        font-weight: 400;
+    @media (max-width: 768px) {
+    .media
+    {
+    font-size: 1.8rem;
+    font-weight: 400;
     }
-    }
+}
 
 .main {
 
@@ -146,3 +146,9 @@ a {
     padding: 20px;
     
 }
+
+
+
+
+
+
