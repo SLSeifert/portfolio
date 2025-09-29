@@ -37,7 +37,7 @@ a {
     }
 }
 
-.nav-item, .modal-title {
+.nav-item {
     border: none;
     /* background-color: white; */
     font-family: "Orbitron", sans-serif;
@@ -49,6 +49,22 @@ a {
     color: black;
     
 }
+
+.modal-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff4365;
+    text-shadow: 
+    0 0 5px #ff8c00,
+    0 0 10px #ff8c00,
+    0 0 20px #ff4500,
+    0 0 40px #ff0000,
+    0 0 80px #fd7057,
+    0 0 90px #fecf79;
+}
+
+
 
 .modal-title {
     font-size: xx-large;

@@ -94,19 +94,58 @@
           </div>
           <div class="modal-body">
             <form>
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" id="email" class="form-control" />
-              <div class="row">
-                <label for="areaCode" class="form-label mt-3"
-                  >Phone Number</label
-                >
-                <div class="col-4">
+              <div class="row mb-2">
+                <label for="firstName" class="form-label">Name</label>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="col ps-0">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label for="compName" class="form-label">Company</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="compName"
+                    name="company"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="areaCode" class="form-label">Phone Number</label>
+                <div class="col-5 col-sm-4">
                   <input
                     type="tel"
                     class="form-control"
                     id="areaCode"
                     name="areaCode"
-                    placeholder="Area code"
+                    placeholder="Area Code"
                   />
                 </div>
                 <div class="col ps-0">
@@ -114,10 +153,60 @@
                     type="tel"
                     class="form-control"
                     name="telNum"
-                    placeholder="Tel. number"
+                    placeholder="Tel. Number"
                   />
                 </div>
               </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="mb-2">How should I contact you?</p>
+                  <div class="offset-1">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactEmail"
+                        name="contactRadios"
+                        value="email"
+                      />
+                      <label for="contactYes" class="form-check-label"
+                        >Email</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactPhone"
+                        name="contactRadios"
+                        value="phone"
+                      />
+                      <label for="contactPhone" class="form-check-label"
+                        >Phone</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactEither"
+                        name="contactRadios"
+                        value="either"
+                      />
+                      <label for="contactEither" class="form-check-label"
+                        >Either</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="memo" class="form-label">Memo</label>
+              <textarea
+                name="memo"
+                class="form-control"
+                id="memo"
+                rows="4"
+              ></textarea>
             </form>
           </div>
           <div class="modal-footer">
