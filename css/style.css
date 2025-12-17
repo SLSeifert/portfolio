@@ -145,12 +145,12 @@ a {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #90959a !important; /* Grey */
-  color: white !important; /* Optional: change text to white */
+  background-color: greenyellow  !important; /* Grey */
+  color: tomato !important; /* Optional: change text to white */
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem rgb(199, 202, 204) !important; /* Grey glow */
+  box-shadow: 0 0 0 0.25rem #dcdada  !important; /* Grey glow */
 }
 
 
