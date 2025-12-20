@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+@font-face {
+  font-family: "PlanetKosmos";
+  src: url("../VIPESRG_.TTF");
+}
+
+
 
 h3, h2 {
   font-family: "Notable", sans-serif;
@@ -155,49 +161,33 @@ a {
 
 
 .name {
-  font-family: "Diplomata SC", serif;
+  font-family: "PlanetKosmos", monospace;
+  color: rgb(44, 44, 44);
+/*   font-family: "Diplomata SC", serif;
   font-weight: 800;
   text-transform: uppercase;
-
-  /* main letter color (currency green) */
   color: #556B2F;
 
-  /* engraved depth + gold edge */
+
   text-shadow:
-    /* dark inner engraving */
+    
     1px 1px 0 #2f4f3e,
     2px 2px 0 #2f4f3e,
 
-    /* mid green body depth */
+
     3px 3px 0 #4e6f5a,
 
-    /* antique gold edge */
+  
     4px 4px 0 #c2a24a,
     5px 5px 0 #9b7c2f,
 
-    /* deep shadow */
-    7px 7px 12px rgba(0, 0, 0, 0.45);
+    
+    7px 7px 12px rgba(0, 0, 0, 0.45); */
 }
 
 .outlined-text {
-  font-family: Diplomata SC, serif; 
-  font-size: 2rem; 
-  font-weight: bold; 
-  color: #556B2F;   
-  text-shadow:
-    /* dark inner engraving */
-    1px 1px 0 #2f4f3e,
-    2px 2px 0 #2f4f3e,
-
-    /* mid green body depth */
-    3px 3px 0 #4e6f5a,
-
-    /* antique gold edge */
-    4px 4px 0 #c2a24a,
-    5px 5px 0 #9b7c2f,
-
-    /* deep shadow */
-    7px 7px 12px rgba(0, 0, 0, 0.45);
+  font-family: "PlanetKosmos", monospace;
+  color: rgb(44, 44, 44);
 }
  
 .brd {
@@ -241,7 +231,7 @@ a {
 
     background-color: rgb(41, 40, 40);
     font-family: 'Fira Code', monospace;
-    color: rgb(130, 204, 19);
+    color: #00FF00;;
     padding: 20px;
     
 }
