@@ -5,7 +5,9 @@
   src: url("../VIPESRG_.TTF");
 }
 
-
+body {
+  background-color: #d4d0c8;
+}
 
 h3, h2 {
   font-family: "Notable", sans-serif;
@@ -239,8 +241,13 @@ a {
 }
 
 footer {
-   background-color: #d4d0c8;
+  background-color: rgb(248, 249, 250);
 }
+
+#art {
+  
+}
+
 
 
 
