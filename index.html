@@ -86,7 +86,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">HIRE ME!</h5>
+            <h5 class="modal-title">CONTACT ME!</h5>
             <button
               type="button"
               class="custom-close position-absolute top-0 end-0 mt-2 me-3"
@@ -97,7 +97,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="contactForm">
               <div class="row mb-2">
                 <label for="firstName" class="form-label">Name</label>
                 <div class="col-6">
@@ -136,6 +136,7 @@
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     class="form-control"
                     required
                   />
@@ -156,7 +157,7 @@
                   <input
                     type="tel"
                     class="form-control"
-                    name="telNum"
+                    name="phone"
                     placeholder="Tel. Number"
                   />
                 </div>
@@ -170,10 +171,10 @@
                         type="radio"
                         class="form-check-input"
                         id="contactEmail"
-                        name="contactRadios"
+                        name="contact"
                         value="email"
                       />
-                      <label for="contactYes" class="form-check-label"
+                      <label for="contactEmail" class="form-check-label"
                         >Email</label
                       >
                     </div>
@@ -182,7 +183,7 @@
                         type="radio"
                         class="form-check-input"
                         id="contactPhone"
-                        name="contactRadios"
+                        name="contact"
                         value="phone"
                       />
                       <label for="contactPhone" class="form-check-label"
@@ -194,7 +195,7 @@
                         type="radio"
                         class="form-check-input"
                         id="contactEither"
-                        name="contactRadios"
+                        name="contact"
                         value="either"
                       />
                       <label for="contactEither" class="form-check-label"
@@ -211,19 +212,19 @@
                 id="memo"
                 rows="4"
               ></textarea>
+              <div class="modal-footer">
+                <button type="button" class="classic" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  style="color: tomato; background-color: greenyellow"
+                  class="classic"
+                >
+                  Send
+                </button>
+              </div>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="classic" data-bs-dismiss="modal">
-              Close
-            </button>
-            <button
-              type="button"
-              style="color: tomato; background-color: greenyellow"
-              class="classic"
-            >
-              Save
-            </button>
           </div>
         </div>
       </div>
@@ -296,7 +297,7 @@
               <div class="brd col-1 pt-0">25</div>
               <div class="col-1"></div>
               <div class="text-secondary col-10 m-0 p-0">
-                &lt;!-- Cust. Success Eng. --&gt;
+                &lt;!-- Cust. Success Eng.--&gt;
               </div>
             </div>
             <div class="brd col-1 pt-2">&nbsp;</div>
@@ -313,72 +314,96 @@
 
     <section>
       <div class="main">
-        <span style="font-size: xx-large">bash-3.2$ </span> The Good Will
-        Hunting of Tech built by grit not by degree. A customer experience
-        professional with 20 years of experience bridging the gap between
-        service, operations and production by translating customer needs into
-        solutions and creative visions into reality. My background includes
-        experience in customer communication, cross-team collaboration and
-        coordination, and creative problem solving. My growing curiosity and
-        commitment to learning have driven me to expand my technical skills
-        through continuing education over the past two years. I’m confident that
-        my strong customer service background, paired with a developing
-        technical perspective, will allow me to bring meaningful value to the
-        tech industry — both by understanding customer needs clearly and by
-        helping translate those needs into effective technical solutions.
-        <br /><br />
-        <span style="font-size: xx-large">bash-3.2$ </span>In my current role as
-        Team Lead at The 3rd Corner, I’ve refined my ability to build relational
-        equity with the back-of-house team and act as an effective liaison. By
-        understanding production, I can translate customer needs — gained
-        through active listening, communication, and empathy — into clear
-        direction for both back- and front-of-house teams to provide tailored
-        solutions. In a previous role at The Lot, I helped launch two locations
-        and contributed to developing systems that improve service and customer
-        experience, while continuously working towards seamless integration of
-        production with service in a unique luxury cinema dining experience. As
-        a creative business owner, I worked as an artist curator and project
-        manager, collaborating with diverse teams to produce events, music, and
-        video content. I helped turn creative vision into reality by
-        coordinating technical and creative contributors, problem solving, and
-        filling in any gaps by learning whatever was necessary to move the
-        project forward.
+        <span class="bash">bash-3.2$ </span> The Good Will Hunting of Tech built
+        by grit not by degree. A customer experience professional with 20 years
+        of experience bridging the gap between service, operations and
+        production by translating customer needs into solutions and creative
+        visions into reality. My background includes experience in customer
+        communication, cross-team collaboration and coordination, and creative
+        problem solving. My growing curiosity and commitment to learning have
+        driven me to expand my technical skills through continuing education
+        over the past two years. I’m confident that my strong customer service
+        background, paired with a developing technical perspective, will allow
+        me to bring meaningful value to the tech industry — both by
+        understanding customer needs clearly and by helping translate those
+        needs into effective technical solutions. <br /><br />
+        <span class="bash">bash-3.2$ </span>In my current role as Team Lead at
+        The 3rd Corner, I’ve refined my ability to build relational equity with
+        the back-of-house team and act as an effective liaison. By understanding
+        production, I can translate customer needs — gained through active
+        listening, communication, and empathy — into clear direction for both
+        back- and front-of-house teams to provide tailored solutions. In a
+        previous role at The Lot, I helped launch two locations and contributed
+        to developing systems that improve service and customer experience,
+        while continuously working towards seamless integration of production
+        with service in a unique luxury cinema dining experience. As a creative
+        business owner, I worked as an artist curator and project manager,
+        collaborating with diverse teams to produce events, music, and video
+        content. I helped turn creative vision into reality by coordinating
+        technical and creative contributors, problem solving, and filling in any
+        gaps by learning whatever was necessary to move the project forward.
       </div>
     </section>
     <footer class="container-fluid pt-3 m-0 rounded-1">
       <div class="row text-center">
         <div
-          class="col-12 col-md-4 d-flex align-items-center justify-content-center pt-4 d-none d-md-flex"
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center pb-3 d-none d-md-flex"
         >
-          <i class="fa-solid fa-phone fa-lg text-dark"></i> Tel: (619) 742-3899
-        </div>
-        <div class="col-12 col-md-4">
-          <a
-            href="https://www.linkedin.com/in/stephen-seifert-6aba48310/"
-            target="_blank"
-            class="pink"
-            ><i class="pink fa-brands fa-linkedin fa-3x text-dark"></i
-          ></a>
-          <a href="https://github.com/SLSeifert" target="_blank"
-            ><i class="fa-brands fa-github fa-3x text-dark"></i
-          ></a>
-          <a href="mailto:slseifert1986@gmail.com" target="_blank"
-            ><i class="fa-brands fa-google fa-3x text-dark"></i
-          ></a>
-          <a href="https://www.youtube.com/@flamingopinkmusic" target="_blank" class="pink"
-            ><i class="fa-brands fa-youtube fa-3x text-dark"></i
-          ></a>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <a class="" href="docs/about.pdf" target="_blank"
+              ><i class="fa-solid fa-user fa-lg"> About Me</i></a
+            >
+            <a href="docs/resume.pdf" target="_blank"
+              ><i class="fa-solid fa-file fa-lg text-dark"> Resume</i></a
+            >
+          </div>
         </div>
         <div
-          class="col-12 col-md-4 d-flex align-items-center justify-content-center pt-4 pe-0 d-none d-md-flex"
+          class="d-flex flex-column align-items-center justify-content-center col-12 col-md-4"
         >
-          <a href="mailto:slseifert1986@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope fa-lg text-dark"> </i> Email:
-            slseifert1986@gmail.com
-          </a>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/stephen-seifert-6aba48310/"
+              target="_blank"
+              class="pink"
+              ><i class="pink fa-brands fa-linkedin fa-3x text-dark"></i
+            ></a>
+            <a href="https://github.com/SLSeifert" target="_blank"
+              ><i class="fa-brands fa-github fa-3x text-dark"></i
+            ></a>
+            <a href="mailto:slseifert1986@gmail.com" target="_blank"
+              ><i class="fa-brands fa-google fa-3x text-dark"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@flamingopinkmusic"
+              target="_blank"
+              class="pink"
+              ><i class="fa-brands fa-youtube fa-3x text-dark"></i
+            ></a>
+          </div>
+          <div class="">
+            <p class="">Copyright © Motus Technology 2025</p>
+          </div>
         </div>
-        <div class="row pt-2 pb-0 m-0">
-          <p class="">Copyright © Motus Technology 2025</p>
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center pb-3 d-none d-md-flex"
+        >
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="d-none d-xl-flex">
+              <a href="mailto:slseifert1986@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope fa-lg text-dark">
+                  slseifert1986@gmail.com</i
+                >
+              </a>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone fa-lg text-dark"> (619) 742-3899</i>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -387,5 +412,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

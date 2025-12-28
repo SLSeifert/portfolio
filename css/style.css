@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #d4d0c8;
+  background-color: #fbfaf7;
 }
 
 h3, h2 {
@@ -177,6 +177,20 @@ a {
     padding-right: 90px;
 }
 
+.main {
+
+    background-color: rgb(41, 40, 40);
+    font-family: 'Fira Code', monospace;
+    color: #00FF00;;
+    padding: 20px;
+    margin: 0;
+    font-size: x-large;
+}
+
+.bash {
+  font-size: xx-large
+}
+
     @media (min-width: 1281px) {
       .media
       , .media
@@ -214,27 +228,26 @@ a {
         .brd {
         padding-right: 80px;
       }
+      .main {
+        font-size: large;
+      }
+
+      .bash {
+        font-size: x-large;
+      }
+
     }
 
     @media (max-width: 768px) {
     .media
     {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 400;
     }
 }
 
 
-.main {
 
-    background-color: rgb(41, 40, 40);
-    font-family: 'Fira Code', monospace;
-    color: #00FF00;;
-    padding: 20px;
-    margin: 0;
-    font-size: x-large;
-    
-}
 
 .music img {
   width: 300px;
