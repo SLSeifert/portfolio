@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen's Portfolio</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3554fc7b7c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=EB+Garamond&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Fira+Code&family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Style Sheet-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar bg-light sticky-top navbar-expand-lg p-2">
+      <div class="container-fluid">
+        <div class="navbar-brand p-0 mt-3 me-0 ms-0 me-md-4 ms-md-4" id="logo">
+          <a href="#">
+            <p>stephen<span style="color: #ff4365">.</span>seifert</p>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-2 ms-md-auto">
+            <li class="nav-item">
+              <a class="nav-link pe-0 pink" href="../../index.html">Home_</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-0" href="art.html">Art+Design_</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-0 pink" href="projex.html">Projex_</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-0" href="#">Skillz_</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pink" href="xperience.html">Xperience</a>
+            </li>
+          </ul>
+          <button
+            class="nav-link classic ms-lg-3"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            href=""
+          >
+            contact
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">HIRE ME!</h5>
+            <button
+              type="button"
+              class="custom-close position-absolute top-0 end-0 mt-2 me-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-2">
+                <label for="firstName" class="form-label">Name</label>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="col ps-0">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label for="compName" class="form-label">Company</label>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="compName"
+                    name="company"
+                  />
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="areaCode" class="form-label">Phone Number</label>
+                <div class="col-5 col-sm-4">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="areaCode"
+                    name="areaCode"
+                    placeholder="Area Code"
+                  />
+                </div>
+                <div class="col ps-0">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="telNum"
+                    placeholder="Tel. Number"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <p class="mb-2">How should I contact you?</p>
+                  <div class="offset-1">
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactEmail"
+                        name="contactRadios"
+                        value="email"
+                      />
+                      <label for="contactYes" class="form-check-label"
+                        >Email</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactPhone"
+                        name="contactRadios"
+                        value="phone"
+                      />
+                      <label for="contactPhone" class="form-check-label"
+                        >Phone</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        id="contactEither"
+                        name="contactRadios"
+                        value="either"
+                      />
+                      <label for="contactEither" class="form-check-label"
+                        >Either</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label for="memo" class="form-label">Memo</label>
+              <textarea
+                name="memo"
+                class="form-control"
+                id="memo"
+                rows="4"
+              ></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="classic" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button
+              type="button"
+              style="color: tomato; background-color: greenyellow"
+              class="classic"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-start m-auto">
+      <div class="row">
+        <div class="col-md-6 ms-auto mt-5">
+          <h2 class="fw-bold mb-2">Skills &amp; Abilities</h2>
+          <ul>
+            <li>
+              Customer-facing communication with a strong technical perspective
+            </li>
+            <li>
+              Ability to build relational equity with engineering and production
+              teams
+            </li>
+            <li>
+              Collaborative approach to developing creative and effective
+              technical solutions
+            </li>
+            <li>
+              Strength in creativity, critical thinking, and cross-team problem
+              solving
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 me-auto">
+          <h2 class="fw-bold mt-5 mb-2">Technical Competencies</h2>
+          <ul>
+            <li>
+              <strong>Data &amp; Development:</strong> SQL, HTML+CSS, Python,
+              JavaScript, Visual Studio Code, Git/GitHub + Copilot
+            </li>
+            <li>
+              <strong>Cloud &amp; Infrastructure:</strong> AWS, Azure, Google
+              Cloud Platform
+            </li>
+            <li>
+              <strong>Tools &amp; Productivity:</strong> Microsoft Office,
+              Ticketing Systems, Slack, ChatGPT
+            </li>
+            <li>
+              <strong>Systems &amp; Networking:</strong> Linux, MacOS, Windows,
+              Networking (TCP/IP, DNS, Firewalls), Virtualization (VMs, Docker,
+              Kubernetes)
+            </li>
+            <li>
+              <strong>Security &amp; Compliance:</strong> CompTIA Security+ (DoD
+              8570/8140 Compliant), Risk Management, Incident Response, Access
+              Control
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ms-auto">
+          <h2 class="fw-bold mt-5 mb-2">Certifications & Training</h2>
+          <ul>
+            <li><strong>NUCAMP Software Engineering Bootcamp</strong></li>
+            <ul>
+              <li>Backend + DevOps (PostgreSQL, Python, Docker, Kubernetes)</li>
+              <li>Web Development Fundamentals (HTML, CSS, Bootstrap)</li>
+              <li>
+                Full-Stack Web + Mobile Development (JS, React, React Native,
+                NodeJS)
+              </li>
+            </ul>
+            <li class="mt-3">
+              <strong>CompTIA Security+ (SY0-701)</strong> — DoD 8570/8140
+              Compliant
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid pt-3 mt-auto rounded-1">
+      <div class="row text-center">
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center pt-4 d-none d-md-flex"
+        >
+          <i class="fa-solid fa-phone fa-lg text-dark"></i> Tel: (619) 742-3899
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="https://www.linkedin.com/in/stephen-seifert-6aba48310/"
+            target="_blank"
+            class="pink"
+            ><i class="pink fa-brands fa-linkedin fa-3x text-dark"></i
+          ></a>
+          <a href="https://github.com/SLSeifert" target="_blank"
+            ><i class="fa-brands fa-github fa-3x text-dark"></i
+          ></a>
+          <a href="mailto:slseifert1986@gmail.com" target="_blank"
+            ><i class="fa-brands fa-google fa-3x text-dark"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@flamingopinkmusic"
+            target="_blank"
+            class="pink"
+            ><i class="fa-brands fa-youtube fa-3x text-dark"></i
+          ></a>
+        </div>
+        <div
+          class="col-12 col-md-4 d-flex align-items-center justify-content-center pt-4 pe-0 d-none d-md-flex"
+        >
+          <a href="mailto:slseifert1986@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope fa-lg text-dark"> </i> Email:
+            slseifert1986@gmail.com
+          </a>
+        </div>
+        <div class="row pt-2 pb-0 m-0">
+          <p class="">Copyright © Motus Technology 2025</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <form>
+      <label for="task">Enter a new task: </label>
+      <input type="text" name="task" placeholder="Enter task..." />
+      <button>Add task</button>
+    </form>
+    <ul></ul>
+    <script>
+      const list = document.querySelector("ul");
+      const input = document.querySelector("input");
+
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const newItem = input.value;
+        input.value = "";
+
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        const deleteButton = document.createElement("button");
+
+        li.appendChild(span);
+        deleteButton.textContent = "Delete";
+        span.textContent = newItem;
+
+        list.appendChild(li);
+        li.appendChild(deleteButton);
+
+        deleteButton.addEventListener("click", () => {
+          li.remove();
+        });
+
+        input.focus();
+      });
+    </script>
+  </body>
+</html>
