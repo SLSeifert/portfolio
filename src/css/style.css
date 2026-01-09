@@ -5,8 +5,20 @@
   src: url("../../assets/fonts/VIPESRG_.TTF");
 }
 
-body {
-  background-color: #fbfaf7;
+.pink {
+  color: #ff4365;
+}
+
+.green {
+  color: greenyellow;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.orange {
+  color: tomato;
 }
 
 h3, h2 {
@@ -51,6 +63,10 @@ a {
     50%{
         border-color: transparent;
     }
+}
+
+nav {
+  border-bottom: 3px solid greenyellow;
 }
 
 .nav-item {
@@ -140,16 +156,41 @@ a {
   }
 
 .gray {
-    background-color: rgba(128, 128, 128, 0.359);
+    background-color: rgb(192,192,192);
+
+}
+
+
+.accordion-item {
+  background-color: #212529 !important;
+  border-top: 1px solid #6c757d !important;
+  border-bottom: 1px solid #6c757d !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.accordion-button {
+  background-color: #212529 !important;
+  color: white !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: greenyellow  !important; /* Grey */
-  color: tomato !important; /* Optional: change text to white */
+  background-color: greenyellow  !important;
+  color: tomato !important;
+}
+
+.accordion-button.collapsed {
+  background-color: #212529 !important;
+  color: white !important;
 }
 
 .accordion-button:focus {
   box-shadow: 0 0 0 0.25rem #dcdada  !important; /* Grey glow */
+}
+
+.accordion-body {
+  background-color: white!important;
+  color: white !important;
 }
 
 
@@ -172,6 +213,7 @@ a {
     padding: 20px;
     margin: 0;
     font-size: x-large;
+    border-top: 3px solid #ff4365;
 }
 
 .bash {
@@ -239,9 +281,7 @@ a {
     padding-right: 85px;
   }
 
-  .main {
-    font-size: large;
-  }
+
 
   .bash {
     font-size: x-large;
@@ -272,13 +312,44 @@ a {
   width: 300px;
 }
 
-footer {
-  background-color: rgb(248, 249, 250);
+/* Base audio element */
+audio {
+  border: none;
+  border-radius: 0;
+  background: #222529; /* close match to bg-dark */
 }
 
-#art {
-  
+/* Main control enclosure (Chromium / Edge / Brave) */
+audio::-webkit-media-controls-enclosure {
+  background: #222529 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
+
+/* Inner control panel */
+audio::-webkit-media-controls-panel {
+  background: #222529 !important;
+  border-radius: 0 !important;
+}
+
+/* Make icons / controls white */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider {
+  filter: invert(1);
+}
+
+
+footer {
+  background-color: rgb(41, 40, 40); /* Match main section dark background */
+  border-top: 3px solid yellow;
+}
+
+
 
 
 
