@@ -21,6 +21,13 @@
   color: tomato;
 }
 
+.blue {
+  color: #00eaff;
+}
+
+
+
+
 h3, h2 {
   font-family: "Notable", sans-serif;
   font-optical-sizing: auto;
@@ -45,10 +52,14 @@ h3, h2 {
     animation: typing 2s steps(15)forwards, blink 1s step-end infinite;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 a {
-    text-decoration: none;
     color: inherit;
 }
+
 
 @keyframes typing {
     from{
@@ -65,9 +76,7 @@ a {
     }
 }
 
-nav {
-  border-bottom: 3px solid greenyellow;
-}
+
 
 .nav-item {
     border: none;
@@ -77,15 +86,19 @@ nav {
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    color: black;
     
 }
 
 .modal-title {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Orbitron", sans-serif;
     font-size: xx-large;
     font-weight: bold;
-    color: #ff4365;
+    
+    color: #00eaff;
+  text-shadow: -1px -1px 0 rgb(255, 67, 101),
+               1px -1px 0 rgb(255, 67, 101),
+               -1px 1px 0 rgb(255, 67, 101),
+               2px 2px 0 rgb(255, 67, 101);    /* text outline */
 
 }
 
@@ -93,29 +106,43 @@ nav {
 
 
 .form-control:focus {
-  border-color: skyblue;         /* your custom border color */
+  border-color: #00eaff;         /* your custom border color */
   box-shadow: 0 0 0 0.25rem rgba(255, 67, 101, 0.25); /* matching glow */
+
 }
 
-.nav-link {
-    color: black;
+.grey:hover {
+  color:  #00FF00; /* #CCFF00 */;
 }
+.nav-link.darker {
+  color: black;
+}
+
 .nav-link:visited {
     color: black;
   }
   
-.nav-link:hover {
+.nav-link.classic:hover {
     color: tomato;
   }
 
-.nav-link.pink:hover {
+.nav-link:hover {
+  color: yellowgreen;
+}
+
+.nav-link.darker:hover {
     color: #ff4365;
 }
 
   
-.nav-link:active {
+.nav-link.darker:active {
     color: greenyellow;
   }
+
+.nav-link:active {
+    color: #ff4365;
+  }
+
 
 .classic {
     font-family: 'Press Start 2P', cursive;
@@ -136,7 +163,8 @@ nav {
 }
 
 .modal-content {
-    border-color: #00FF00;
+    border-color: #00eaff;
+     box-shadow: 0 0 0 0.25rem rgba(255, 67, 101, 0.5);
     border-width: 5px;
 }
 
@@ -157,9 +185,20 @@ nav {
 
 .gray {
     background-color: rgb(192,192,192);
-
 }
 
+.grey2 {
+  color: rgb(192,192,192);
+    text-shadow: 2px 2px 0 rgb(255, 67, 101),
+    3px 3px 0 rgb(255, 67, 101),
+    1px 1px 0 rgb(255, 67, 101);
+}
+
+.grey {
+  color: rgb(192,192,192);
+    text-shadow: 2px 2px 0 rgb(255, 67, 101),
+    1px 1px 0 rgb(255, 67, 101);
+}
 
 .accordion-item {
   background-color: #212529 !important;
@@ -175,8 +214,8 @@ nav {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: greenyellow  !important;
-  color: tomato !important;
+  /* background-color: grey !important; */
+  color: yellowgreen !important;
 }
 
 .accordion-button.collapsed {
@@ -185,7 +224,7 @@ nav {
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem #dcdada  !important; /* Grey glow */
+  box-shadow: 0 0 0 0.1rem rgb(255, 67, 101) !important; /* Grey glow */
 }
 
 .accordion-body {
@@ -209,11 +248,11 @@ nav {
 
     background-color: rgb(41, 40, 40);
     font-family: 'Fira Code', monospace;
-    color: #00FF00;;
+    color: #00FF00;
     padding: 20px;
     margin: 0;
     font-size: x-large;
-    border-top: 3px solid #ff4365;
+    
 }
 
 .bash {
@@ -343,10 +382,15 @@ audio::-webkit-media-controls-volume-slider {
   filter: invert(1);
 }
 
+.navbar {
+  border-bottom: yellow solid 2px;
+}
 
 footer {
-  background-color: rgb(41, 40, 40); /* Match main section dark background */
-  border-top: 3px solid yellow;
+  border-top: yellowgreen solid 3px;
+}
+.card {
+  border: lightgray solid 4px;
 }
 
 
