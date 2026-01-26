@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @font-face {
   font-family: "VIPESRG";
@@ -27,18 +27,14 @@
 
 .darkgrey {
   color: rgb(140, 137, 137);
-
 }
 
 .lightgrey {
   color: rgb(210, 209, 209);
-  
 }
 
-
-
-
-h3, h2 {
+h3,
+h2 {
   font-family: "Notable", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -46,20 +42,22 @@ h3, h2 {
 }
 
 #logo {
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.63rem;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.63rem;
 }
 
 #logo p {
-    color: black;
-    overflow: hidden;
-    margin-inline: auto;
-    white-space: nowrap;
-    border-right: 1px solid;
-    
-    animation: typing 2s steps(15)forwards, blink 1s step-end infinite;
+  color: black;
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  border-right: 1px solid;
+
+  animation:
+    typing 2s steps(15) forwards,
+    blink 1s step-end infinite;
 }
 
 nav a {
@@ -67,144 +65,154 @@ nav a {
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
-
 @keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-    50%{
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
-
-
 
 .nav-item {
-    border: none;
-    font-family: "Orbitron", sans-serif;
-    font-size: large;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    
-}
-
-.form-control:focus {
-  border-color: #00eaff;         /* your custom border color */
-  box-shadow: 0 0 0 0.25rem rgba(255, 67, 101, 0.25); /* matching glow */
-
+  border: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: large;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .grey:hover {
-  color:  #00FF00; /* #CCFF00 */;
+  color: #00ff00; /* #CCFF00 */
 }
 .nav-link.darker {
   color: black;
 }
 
 .nav-link:visited {
-    color: black;
-  }
-  
-.nav-link.classic:hover {
-    color: tomato;
-  }
+  color: black;
+}
 
-.nav-link:hover, .darkgrey:hover {
+.nav-link.classic:hover {
+  color: tomato;
+}
+
+.nav-link:hover,
+.darkgrey:hover {
   color: yellowgreen;
 }
 
 .nav-link.darker:hover {
-    color: #ff4365;
+  color: #ff4365;
 }
 
 .lightgrey:hover {
-    color: rgb(246, 246, 74);
+  color: rgb(246, 246, 74);
 }
 
-  
 .nav-link.darker:active {
-    color: greenyellow;
-  }
+  color: greenyellow;
+}
 
 .nav-link:active {
-    color: #ff4365;
-  }
-
-
-.classic {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
-    color: black;
-    background-color: #d4d0c8;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    box-shadow: inset 2px 2px 0 #808080, inset -2px -2px 0 #000000; 
-    text-shadow: 1px 1px 0 #ffffff;
-    cursor: pointer;
-    user-select: none;
-    image-rendering: pixelated;
-  }
-
-.modal-title {
-    font-family: "Orbitron", sans-serif;
-    font-size: xx-large;
-    font-weight: bold;
-    
-    color:black;
-
-
+  color: #ff4365;
 }
 
-.modal-footer>.classic {
-    padding: 8px;
+.classic {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  color: black;
+  background-color: #d4d0c8;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  box-shadow:
+    inset 2px 2px 0 #808080,
+    inset -2px -2px 0 #000000;
+  text-shadow: 1px 1px 0 #ffffff;
+  cursor: pointer;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+.modal-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+
+  color: tomato;
+  text-shadow:
+    -1px -1px 0 greenyellow,
+    1px -1px 0 greenyellow,
+    -1px 1px 0 greenyellow,
+    1px 1px 0 greenyellow;
+}
+
+.modal-footer > .classic {
+  padding: 8px;
 }
 
 .modal-content {
-    border-color: grey;
-     box-shadow: 0 0 0 0.25rem lightgray;
-    border-width: 5px;
+  border-color: whitesmoke;
+  box-shadow: 0 0 0 0.25rem greenyellow;
+  border-width: 5px;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: tomato; /* your custom border color */
+  box-shadow: 0 0 0 0.25rem greenyellow; /* matching glow */
+}
+
+.form-check-input:checked,
+.form-check-input:focus {
+  background-color: tomato;
+
+  border-color: tomato; /* your custom border color */
+  box-shadow: 0 0 0 0.25rem greenyellow; /* matching glow */
 }
 
 .custom-close {
   font-size: 2rem;
-  color: tomato; 
+  color: #ff4365;
   background: none;
   border: none;
 }
 
 .custom-close:hover {
-  color: #ff6f91; 
+  color: #ff6f91;
 }
 
 .nav-link.classic:hover {
-    background-color: greenyellow;
-  }
+  background-color: greenyellow;
+}
 
 .gray {
-    background-color: rgb(192,192,192);
+  background-color: rgb(192, 192, 192);
 }
 
 .grey2 {
-  color: rgb(192,192,192);
-    text-shadow: 2px 2px 0 rgb(255, 67, 101),
+  color: rgb(192, 192, 192);
+  text-shadow:
+    2px 2px 0 rgb(255, 67, 101),
     3px 3px 0 rgb(255, 67, 101),
     1px 1px 0 rgb(255, 67, 101);
 }
 
 .grey {
-  color: rgb(192,192,192);
-    text-shadow: 2px 2px 0 rgb(255, 67, 101),
+  color: rgb(192, 192, 192);
+  text-shadow:
+    2px 2px 0 rgb(255, 67, 101),
     1px 1px 0 rgb(255, 67, 101);
 }
 
@@ -221,9 +229,10 @@ a {
   color: white !important;
 }
 
-.accordion-button:not(.collapsed) {
-  /* background-color: grey !important; */
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
   color: yellowgreen !important;
+  box-shadow: 0 0 0 0.1rem #ff4365 !important; /* Grey glow */
 }
 
 .accordion-button.collapsed {
@@ -231,40 +240,32 @@ a {
   color: white !important;
 }
 
-.accordion-button:focus {
-  box-shadow: 0 0 0 0.1rem rgb(255, 67, 101) !important; /* Grey glow */
-}
-
 .accordion-body {
-  background-color: white!important;
+  background-color: white !important;
   color: white !important;
 }
-
 
 .name {
   font-family: "VIPESRG", monospace;
   color: rgb(44, 44, 44);
-  
 }
- 
+
 .brd {
-    border-right: 3px solid rgb(96, 95, 95);
-    padding-right: 90px;
+  border-right: 3px solid rgb(96, 95, 95);
+  padding-right: 90px;
 }
 
 .main {
-
-    background-color: rgb(41, 40, 40);
-    font-family: 'Fira Code', monospace;
-    color: #00FF00;
-    padding: 20px;
-    margin: 0;
-    font-size: x-large;
-    
+  background-color: rgb(41, 40, 40);
+  font-family: "Fira Code", monospace;
+  color: #00ff00;
+  padding: 20px;
+  margin: 0;
+  font-size: x-large;
 }
 
 .bash {
-  font-size: xx-large
+  font-size: xx-large;
 }
 
 /* >= 1281px */
@@ -328,8 +329,6 @@ a {
     padding-right: 85px;
   }
 
-
-
   .bash {
     font-size: x-large;
   }
@@ -350,10 +349,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
-
-
-
 
 .music img {
   width: 300px;
@@ -400,15 +395,3 @@ footer {
 .card {
   border: lightgray solid 4px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
